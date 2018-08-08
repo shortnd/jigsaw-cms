@@ -1,5 +1,5 @@
 ---
-layout: _layouts.blog
+extends: _layouts.blog
 title: Post 2
 author: Me
 ---

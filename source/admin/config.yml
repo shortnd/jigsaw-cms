@@ -11,7 +11,7 @@ collections:
     create: true
     slug: '{{slug}}'
     fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: '_layouts.blog'}
+      - { label: 'Layout', name: 'extends', widget: 'hidden', default: '_layouts.blog'}
       - { label: 'Title', name: 'title', widget: 'string'}
       - { label: 'Author', name: 'author', widget: 'string'}
       - { label: 'Body', name: 'body', widget: 'markdown'}
