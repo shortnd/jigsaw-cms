@@ -5,7 +5,7 @@ publish_mode: editorial_workflow
 media_folder: "source/assets/images"
 public_folder: "assets/images"
 collections:
-  - name: "Post"
+  - name: "post"
     label: "Post"
     folder: "source/_posts"
     create: true
@@ -15,3 +15,16 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "source/_pages/about.md"
+        label: "about"
+        name: "about"
+        delete: false
+        fields:
+          - {label: "Extends", name: "extends", widget: "hidden", default: "_layouts.inner" }
+          - {label: "Title", name: "title", widget: hidden, default: "About"}
+          - {label: "Mission Statement", name: "mission_statement", widget: "text"}
+          - {label: "Page Img", name: "page_img", widget: "image"}
+          - {label: "Page Img Alt", name: "page_img_alt", widget: "string"}
