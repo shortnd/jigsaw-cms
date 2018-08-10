@@ -5,11 +5,11 @@ publish_mode: editorial_workflow
 media_folder: "source/assets/images"
 public_folder: "assets/images"
 collections:
-  - name: "post"
-    label: "Post"
-    folder: "source/_posts"
+  - name: 'post'
+    label: 'Post'
+    folder: 'source/_posts'
     create: true
-    slug: {{slug}}
+    slug: '{{slug}}'
     fields:
       - {label: "Extends", name: "extends", widget: "hidden", default: "_layouts.blog"}
       - {label: "Title", name: "title", widget: "string"}
