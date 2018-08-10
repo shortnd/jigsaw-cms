@@ -25,6 +25,6 @@ collections:
         fields:
           - {label: "Extends", name: "extends", widget: "hidden", default: "_layouts.inner" }
           - {label: "Title", name: "title", widget: hidden, default: "About"}
-          - {label: "Mission Statement", name: "mission_statement", widget: "text"}
+          - {label: "Mission Statement", name: "mission_statement", widget: "markdown"}
           - {label: "Page Img", name: "page_img", widget: "image"}
           - {label: "Page Img Alt", name: "page_img_alt", widget: "string"}
