@@ -12,6 +12,9 @@
         @foreach ($posts as $post)
           <a href="{{$post->getPath()}}">{{$post->title}}</a>
         @endforeach
+        @foreach ($pages as $page)
+          <a href="{{$page->getPath()}}">{{$page->title}}</a>
+        @endforeach
         <script>
           if (window.netlifyIdentity) {
             window.netlifyIdentity.on("init", user => {
