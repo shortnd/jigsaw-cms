@@ -7,6 +7,8 @@
     <p> {{$author}} </p>
   @endforeach --}}
   <div class="" style="background:green">
-    {{$page->$author[1]}}
   </div>
+  {{-- @json($page) --}}
+  {{ $page->author['name'] }}
+  <img src="{{ $page->author['avatar']}}" alt="something" />
 @endsection
