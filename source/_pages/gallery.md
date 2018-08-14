@@ -1,5 +1,7 @@
 ---
+title: Gallery
 extends: _layouts.gallery
-title: 'Gallery'
-list: []
+list:
+  - test
 ---
+
