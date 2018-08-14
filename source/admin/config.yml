@@ -47,3 +47,16 @@ collections:
           - {label: 'Extends', name: 'extends', widget: 'hidden'}
           - {label: 'Title', name: 'title', widget: 'hidden'}
           - {label: 'Date', name: 'date', widget: 'date', format: 'MMM Do YY', default: ''}
+
+      - file: "source/_pages/testimonials.md"
+        lable: 'Testimonials'
+        name: 'testimonials'
+        widget: 'list'
+        fields:
+          - {label: 'Quote', name: 'quote', widget: 'string', default: ''}
+          - label: 'Author'
+            name: 'author'
+            widget: 'object'
+            fields:
+              - {label: 'Name', name: 'name', widget: 'string', defalt: 'Emmet'}
+              - {label: 'Avatar', name: 'avatar', widget: 'image', default: '/images/jigsaw.png'}
