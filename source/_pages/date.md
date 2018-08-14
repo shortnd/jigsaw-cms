@@ -1,5 +1,6 @@
 ---
 extends: _layouts.date
 title: Date
-date: ''
+date: Aug 14th 18
 ---
+
