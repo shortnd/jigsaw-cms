@@ -44,4 +44,6 @@ collections:
         label: "Date"
         name: "date",
         fields:
+          - {label: 'Extends', name: 'extends', widget: 'hidden'}
+          - {label: 'Title', name: 'title', widget: 'hidden'}
           - {label: 'Date', name: 'date', widget: 'date', format: 'MMM Do YY', default: ''}
