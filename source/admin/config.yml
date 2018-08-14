@@ -42,7 +42,7 @@ collections:
 
       - file: "source/_pages/date.md"
         label: "Date"
-        name: "date",
+        name: "date"
         fields:
           - {label: 'Extends', name: 'extends', widget: 'hidden'}
           - {label: 'Title', name: 'title', widget: 'hidden'}
