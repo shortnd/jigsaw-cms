@@ -39,3 +39,9 @@ collections:
           - {label: 'Name', name: 'name', widget: 'string'}
           - {label: 'Mission Statement', name: 'mission_statement', widget: 'text'}
           - {label: 'Draft', name: 'draft', widget: 'boolean'}
+
+      - file: "source/_pages/date.md"
+      label: "Date"
+      name: "date",
+      fields:
+        - {label: 'Date', name: 'date', widget: 'date', format: 'MMM Do YY', default: ''}
