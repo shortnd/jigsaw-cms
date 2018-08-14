@@ -53,6 +53,7 @@ collections:
         name: 'testimonials'
         widget: 'list'
         fields:
+          - {label: 'Extends', name: 'extends', widget: 'hidden'}
           - {label: 'Quote', name: 'quote', widget: 'string', default: ''}
           - label: 'Author'
             name: 'author'
