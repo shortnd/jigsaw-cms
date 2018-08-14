@@ -4,3 +4,60 @@ backend:
 publish_mode: editorial_workflow
 media_folder: "source/assets/images"
 public_folder: "assets/images"
+collections:
+  - name: 'post'
+    label: 'Post'
+    folder: 'source/_posts'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - {label: "Extends", name: "extends", widget: "hidden", default: "_layouts.blog"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "pages"
+    label: "Pages"
+    delete: false
+    files:
+      - file: "source/_pages/about.md"
+        label: "about"
+        name: "about"
+        fields:
+          - {label: "Extends", name: "extends", widget: "hidden", default: "_layouts.inner" }
+          - {label: "Title", name: "title", widget: hidden, default: "About"}
+          - {label: "Name", name: "name", widget: 'string'}
+          - {label: "Mission Statement", name: "mission_statement", widget: "text"}
+          - {label: "Page Img", name: "page_img", widget: "image"}
+          - {label: "Page Img Alt", name: "page_img_alt", widget: "string"}
+
+      - file: "source/_pages/boolean.md"
+        label: "Boolean"
+        name: 'boolean'
+        fields:
+          - {label: "Extends", name: "extends", widget: 'hidden'}
+          - {label: "Title", name: 'title', widget: 'hidden'}
+          - {label: 'Name', name: 'name', widget: 'string'}
+          - {label: 'Mission Statement', name: 'mission_statement', widget: 'text'}
+          - {label: 'Draft', name: 'draft', widget: 'boolean'}
+
+      - file: "source/_pages/date.md"
+        label: "Date"
+        name: "date"
+        fields:
+          - {label: 'Extends', name: 'extends', widget: 'hidden'}
+          - {label: 'Title', name: 'title', widget: 'hidden'}
+          - {label: 'Date', name: 'date', widget: 'date', format: 'MMM Do YY', default: ''}
+
+      - file: "source/_pages/testimonials.md"
+        lable: 'Testimonials'
+        name: 'testimonials'
+        widget: 'list'
+        fields:
+          - {label: 'Extends', name: 'extends', widget: 'hidden'}
+          - {label: 'Quote', name: 'quote', widget: 'string', default: ''}
+          - label: 'Author'
+            name: 'author'
+            widget: 'object'
+            fields:
+              - {label: 'Name', name: 'name', widget: 'string', defalt: 'Emmet'}
+              - {label: 'Avatar', name: 'avatar', widget: 'image', default: '/images/jigsaw.png'}
