@@ -71,5 +71,5 @@ collections:
           - label: 'Slides'
             name: 'slides'
             widget: 'list'
-            feilds:
-              - {label:'Slide', name: 'slide', widget: image}
+            feild:
+              - {label:'Slide', widget: image}
