@@ -57,7 +57,7 @@ collections:
           - {label: 'Quote', name: 'quote', widget: 'string', default: ''}
           - label: 'Author'
             name: 'author'
-            widget: 'list'
+            widget: 'object'
             fields:
               - {label: 'Name', name: 'name', widget: 'string', defalt: 'Emmet'}
               - {label: 'Avatar', name: 'avatar', widget: 'image', default: '/images/jigsaw.png'}
