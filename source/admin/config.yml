@@ -65,6 +65,9 @@ collections:
       - file: "source/_pages/gallery.md"
         label: 'Gallery'
         name: 'Gallery'
-        widget: 'list'
         field:
-          - {label: 'Image', name: 'image', widget: 'image'}
+          - label: 'Slides'
+            name: 'slides'
+            widget: 'list'
+            feilds:
+              - {label:'Slide', name: 'slide', widget: 'image'}
