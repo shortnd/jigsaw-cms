@@ -68,9 +68,8 @@ collections:
         fields:
           - {label: 'Title', name: 'title', widget: 'hidden'}
           - {label: 'Extends', name: 'extends', widget: 'hidden'}
-          - label: 'Slides'
-            name: 'slides'
+          - label: 'List'
+            name: 'list'
             widget: 'list'
-            feilds:
-              - {label:'Slide', name: 'slide', widget: 'image'}
-              - {label: 'Text', name: 'text', widget: 'string'}
+            feild:
+              -{label: 'Text', name: 'text', widget: 'string'}
