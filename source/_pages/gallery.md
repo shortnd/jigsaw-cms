@@ -1,5 +1,6 @@
 ---
 extends: _layouts.gallery
 title: 'Gallery'
-list: []
+list:
+  - 'assets/images/jigsaw.png'
 ---
