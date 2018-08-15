@@ -68,8 +68,4 @@ collections:
         fields:
           - {label: 'Title', name: 'title', widget: 'hidden'}
           - {label: 'Extends', name: 'extends', widget: 'hidden'}
-          - label: "List"
-            name: "list"
-            widget: "list"
-            field:
-              - {label: Image, name: image, widget: image}
+          - {label: 'List', name: 'list', widget: 'image'}
