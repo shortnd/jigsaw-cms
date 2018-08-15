@@ -69,3 +69,20 @@ collections:
           - {label: 'Title', name: 'title', widget: 'hidden'}
           - {label: 'Extends', name: 'extends', widget: 'hidden'}
           - {label: 'List', name: 'list', widget: 'image'}
+
+      - file: "source/_pages/quote.md"
+        label: "Quote"
+        name: "quote"
+        feilds:
+            - {label: 'Extends', name: 'extends', widget: 'hidden'}
+            - {label: 'Title', name: 'title', widget: 'hidden'}
+            - label: 'Quotes'
+              name: 'quotes'
+              widget: 'list'
+              feilds:
+                  - {label: 'Quote', name: 'quote', widget: 'string'}
+                  - label: 'Author'
+                    name: 'author'
+                    widget: 'object'
+                      - {label: 'Name', name: 'name', widget: 'string'}
+                      - {label: 'Avatar', name: 'avatar', widget: 'image'}
