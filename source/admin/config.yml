@@ -59,8 +59,8 @@ collections:
             name: 'author'
             widget: 'object'
             fields:
-              - {label: 'Name', name: 'name', widget: 'string', defalt: 'Emmet'}
-              - {label: 'Avatar', name: 'avatar', widget: 'image', default: '/images/jigsaw.png'}
+              - {label: 'Name', name: 'name', widget: 'string'}
+              - {label: 'Avatar', name: 'avatar', widget: 'image'}
 
       - file: "source/_pages/gallery.md"
         label: 'Gallery'
