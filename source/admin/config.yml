@@ -76,14 +76,14 @@ collections:
         feilds:
             - {label: 'Extends', name: 'extends', widget: 'hidden'}
             - {label: 'Title', name: 'title', widget: 'hidden'}
-            - label: 'Quotes'
-              name: 'quotes'
-              widget: 'list'
-              feilds:
-                  - {label: 'Quote', name: 'quote', widget: 'string'}
-                  - label: 'Author'
-                    name: 'author'
-                    widget: 'object'
-                    feilds:
-                      - {label: 'Name', name: 'name', widget: 'string'}
-                      - {label: 'Avatar', name: 'avatar', widget: 'image'}
+            - label: "Quotes"
+              name: "quotes"
+              widget: "list"
+              fields:
+                - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
+                - label: Author
+                  name: author
+                  widget: object
+                  fields:
+                    - {label: Name, name: name, widget: string, default: "Emmet"}
+                    - {label: Avatar, name: avatar, widget: image, default: "/img/emmet.jpg"}
