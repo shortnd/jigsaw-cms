@@ -52,13 +52,12 @@ collections:
         lable: 'Testimonials'
         name: 'testimonials'
         widget: 'list'
-        allow_add: true
         fields:
           - {label: 'Extends', name: 'extends', widget: 'hidden'}
           - {label: 'Quote', name: 'quote', widget: 'string', default: ''}
           - label: 'Author'
             name: 'author'
-            widget: 'list'
+            widget: 'object'
             fields:
               - {label: 'Name', name: 'name', widget: 'string'}
               - {label: 'Avatar', name: 'avatar', widget: 'image'}
