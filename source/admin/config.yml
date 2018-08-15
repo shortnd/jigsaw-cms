@@ -52,6 +52,7 @@ collections:
         lable: 'Testimonials'
         name: 'testimonials'
         widget: 'list'
+        allow_add: true
         fields:
           - {label: 'Extends', name: 'extends', widget: 'hidden'}
           - {label: 'Quote', name: 'quote', widget: 'string', default: ''}
