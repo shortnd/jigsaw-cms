@@ -58,7 +58,7 @@ collections:
           - {label: 'Quote', name: 'quote', widget: 'string', default: ''}
           - label: 'Author'
             name: 'author'
-            widget: 'object'
+            widget: 'list'
             fields:
               - {label: 'Name', name: 'name', widget: 'string'}
               - {label: 'Avatar', name: 'avatar', widget: 'image'}
