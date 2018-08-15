@@ -84,5 +84,6 @@ collections:
                   - label: 'Author'
                     name: 'author'
                     widget: 'object'
-                        - {label: 'Name', name: 'name', widget: 'string'}
-                        - {label: 'Avatar', name: 'avatar', widget: 'image'}
+                    feilds:
+                      - {label: 'Name', name: 'name', widget: 'string'}
+                      - {label: 'Avatar', name: 'avatar', widget: 'image'}
